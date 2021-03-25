@@ -27,8 +27,18 @@ namespace GeneralStore.MVC.Controllers
         public ActionResult Create()
         {
             TransactionCreate model = new TransactionCreate();
-            List<Product> products = _db.Products.ToList();
-            model.Products = products;
+
+            var products = _db.Products.ToArray();
+
+
+
+            model.Products = new SelectList(products, "ProductId", "Name");
+
+            // model.Products = (SelectList) products.Select(p => new SelectListItem() { Value = p.ProductId.ToString(), Text = p.Name });
+
+
+
+
             model.CustomerId = 1;
             return View(model);
         }

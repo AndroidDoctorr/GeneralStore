@@ -188,6 +188,10 @@
     <Compile Include="Migrations\202012091437413_added-transactions.Designer.cs">
       <DependentUpon>202012091437413_added-transactions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103242105347_test.cs" />
+    <Compile Include="Migrations\202103242105347_test.Designer.cs">
+      <DependentUpon>202103242105347_test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -291,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012091437413_added-transactions.resx">
       <DependentUpon>202012091437413_added-transactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103242105347_test.resx">
+      <DependentUpon>202103242105347_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

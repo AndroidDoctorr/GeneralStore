@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace GeneralStore.MVC.Models
 {
@@ -15,6 +16,6 @@ namespace GeneralStore.MVC.Models
         [Required]
         public int Quantity { get; set; }
 
-        public List<Product> Products { get; set; }
+        public SelectList Products { get; set; }
     }
 }
